@@ -4,60 +4,13 @@
 Application Java Swing pour générer des QR Codes avec personnalisation et export en document image.
 
 ## Fonctionnalités
-- ✅ Génération de QR Code simplifiée (sans bibliothèques externes)
+- ✅ Génération de QR Code 
 - ✅ Interface graphique intuitive avec onglets
 - ✅ Aperçu en temps réel du QR Code
 - ✅ Personnalisation des couleurs et polices
-- ✅ Export en document image composite (PNG)
+- ✅ Export en document PDF
 - ✅ Gestion des logos personnalisés
 - ✅ Sauvegarde et chargement de projets
-
-## 🔧 Corrections apportées
-- ✅ **Erreurs de syntaxe corrigées** : Parenthèses, accolades et points-virgules
-- ✅ **Imports nettoyés** : Suppression des imports inutilisés
-- ✅ **Layout amélioré** : GridBagConstraints mieux configurés
-- ✅ **Code autonome** : Fonctionne sans Maven ni dépendances externes
-- ✅ **Scripts d'aide** : Installation automatique de Java et tests de syntaxe
-
-## Prérequis
-- Java JDK 8 ou supérieur installé sur votre système
-- Aucune bibliothèque externe requise (code autonome)
-
-### ⚠️ Java non installé ?
-Si Java n'est pas installé sur votre système :
-- **macOS** : `./install_java.sh` (installation automatique)
-- **Linux** : `sudo apt install openjdk-11-jdk`
-- **Windows** : Téléchargez depuis [Adoptium](https://adoptium.net/)
-- **Voir** : `INSTALL.md` pour instructions détaillées
-
-## Installation et Compilation
-
-### 1. Vérifier Java
-```bash
-java -version
-javac -version
-```
-
-### 2. Tester la syntaxe (optionnel)
-```bash
-# Vérifier que le code est syntaxiquement correct
-./test_syntax.sh
-```
-
-### 3. Compiler l'application
-```bash
-# Option 1: Utiliser le script de compilation
-./compile.sh
-
-# Option 2: Compilation manuelle
-mkdir -p bin
-javac -d bin -cp src src/*.java src/controller/*.java src/model/*.java src/view/*.java src/utils/*.java
-```
-
-### 4. Exécuter l'application
-```bash
-java -cp bin Main
-```
 
 ## Structure du Projet
 
