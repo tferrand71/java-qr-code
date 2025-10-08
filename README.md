@@ -1,7 +1,7 @@
 # Générateur de QR Code - Application Java
 
 ## Description
-Application Java Swing pour générer des QR Codes avec personnalisation et export en document image.
+Application Java Swing pour générer des QR Codes avec personnalisation et export en document PDF.
 
 ## Fonctionnalités
 - ✅ Génération de QR Code 
@@ -47,57 +47,20 @@ src/
 4. Ajoutez un logo personnalisé (optionnel)
 
 ### 3. Format de Sortie
-- **Fichier principal** : Image PNG composite (800x600px) contenant :
+- **Fichier principal** : PDF :
   - Titre du document
   - Contenu encodé
   - QR Code généré
   - Instructions d'utilisation
-  - Logo personnalisé (si ajouté)
+  - Logo personnalisé 
 
 ## Fonctionnalités Techniques
 
 ### Génération QR Code Simplifiée
-- Utilise un algorithme de génération basique sans bibliothèque externe
+- Utilise un algorithme de génération basique 
 - Crée un motif QR Code avec marqueurs de position
-- Basé sur le hash du texte pour la génération du motif
 
 ### Export Document
-- Crée une image composite avec toutes les informations
 - Support des couleurs personnalisées
 - Intégration du logo utilisateur
-- Format PNG pour compatibilité maximale
-
-### Gestion des Projets
-- Sérialisation des modèles et profils
-- Sauvegarde au format `.qrproj` et `.qrprof`
-- Chargement des configurations précédentes
-
-## Dépannage
-
-### Erreur "Unable to locate Java Runtime"
-- Installez Java JDK depuis [Oracle](https://www.oracle.com/java/technologies/downloads/) ou [OpenJDK](https://openjdk.org/)
-- Vérifiez que `JAVA_HOME` est configuré correctement
-
-### Erreur de compilation
-- Vérifiez que tous les fichiers Java sont présents dans le dossier `src/`
-- Assurez-vous d'utiliser Java 8 ou supérieur
-- Vérifiez les permissions d'écriture dans le dossier `bin/`
-
-### Interface ne s'affiche pas
-- Vérifiez que les composants Swing sont disponibles
-- Sur Linux, installez les paquets graphiques nécessaires
-
-## Limitations
-- QR Code généré est un motif simplifié (non standard)
-- Pas de vraie génération PDF (remplacée par image composite)
-- Fonctionnalité de scan limitée (motif basique)
-
-## Développement
-Pour améliorer l'application :
-1. Intégrer une vraie bibliothèque QR Code (ZXing)
-2. Ajouter la génération PDF réelle (iText)
-3. Implémenter la lecture de QR Codes
-4. Ajouter plus d'options de personnalisation
-
-## Licence
-Projet éducatif - BTS SIO
+- Format PDF pour compatibilité maximale
